@@ -1,6 +1,6 @@
-# Apollo tutorial
+# Build a full-stack GraphQL app using Apollo
 
-This is the fullstack app for the [Apollo tutorial](http://apollographql.com/docs/tutorial/introduction.html). 🚀
+A full-stack webapp built with GraphQL and Apollo Server 🚀
 
 ## File structure
 
@@ -23,4 +23,4 @@ and
 ```bash
 cd final/client && npm i && npm start
 ```
-# graphQL-full-stack-webapp
+
