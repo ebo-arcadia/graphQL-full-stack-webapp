@@ -1,4 +1,4 @@
-import { InMemoryCache, Reference } from '@apollo/client';
+import { InMemoryCache, Reference, makeVar } from '@apollo/client';
 
 export const cache: InMemoryCache = new InMemoryCache({
     typePolicies: {
@@ -24,3 +24,9 @@ export const cache: InMemoryCache = new InMemoryCache({
         }
     }
 });
+
+// initialize to true if local storage includes a 'token' key; otherwise, returns false
+export const isLoggedInVar = makeVar<boolean>(!!localStorage.getItem('token'));
+
+// initialize to an empty array
+export const cartItemsVar = makeVar<string[]>([]);
